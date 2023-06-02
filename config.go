@@ -57,7 +57,7 @@ type YAML struct {
 // available tweaks to the default behavior.
 func NewYAML(options ...YAMLOption) (*YAML, error) {
 	cfg := &config{
-		strict: true,
+		strict: false,
 		name:   "YAML",
 	}
 	for _, o := range options {
